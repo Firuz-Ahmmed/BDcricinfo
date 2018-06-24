@@ -1,0 +1,8 @@
+body{ 
+    background-image:url("bd.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: absolute;
+    background-size: 100% 150%;
+	
+}

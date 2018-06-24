@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function ValidateContactForm() {
+            var name = ContactForm.name;
+            var email = ContactForm.email;
+            var phone = ContactForm.mobile;
+            var pass = ContactForm.password;
+            var gen = ContactForm.gender;
+            var addr = ContactForm.address;
+
+            if (name.value == "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+            if (pass.value == "") {
+                window.alert("Please enter your password.");
+                name.focus();
+                return false;
+            }
+            if (pass.length < "8") {
+                window.alert("Password At least 8 characters.");
+                name.focus();
+                return false;
+            }
+            if (email.value == "") {
+                window.alert("Please enter your email.");
+                name.focus();
+                return false;
+            }
+            if (email.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (email.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (phone.value == "") {
+                window.alert("Please enter your phone number.");
+                name.focus();
+                return false;
+            }
+            if (gen.value == "") {
+                window.alert("Please enter your Gender.");
+                name.focus();
+                return false;
+            }
+            if (addr.value == "") {
+                window.alert("Please enter your Address.");
+                name.focus();
+                return false;
+            }
+
+            return true;
+
+        }
+
+    </script>
+
+</head>
+
+<body style=" background-color: skyblue;">
+    <div class="header"> Registration
+    </div>
+    <form action="newadmin.php" method="POST" name="ContactForm" onsubmit="return ValidateContactForm();">
+        <table>
+            <tr>
+                <td> User name</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td> Email</td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile No</td>
+                <td>
+                    <input type="text" name="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td> Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="male">Male</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Sign up">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

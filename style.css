@@ -1,0 +1,23 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    background-color: #1A3333;
+    color: white;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+}
+form {
+    width: 30%;
+    padding: 3px;
+    border: 1px solid #cbcbcb;
+    margin: 5px auto;
+    background-color: #1A3333;
+}
+td {
+    text-align: right;
+    color: white;
+}

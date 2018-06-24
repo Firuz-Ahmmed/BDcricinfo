@@ -1,0 +1,72 @@
+body{ 
+    background-image:url("bd.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: absolute;
+	background-size: 100% 150%;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: green;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a.active {
+    background-color: black;
+    color: white;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: red;
+}
+.header {
+    width: 100%;
+    background-color: black;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+z .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: firebrick;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: yellow;
+}
+ 
